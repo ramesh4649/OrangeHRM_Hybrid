@@ -63,6 +63,9 @@ public class LoginPage extends Apputils
 		driver.findElement(By.linkText("Logout")).click();
 	}
 	
-	
+	public void add()
+	{
+		System.out.println("new method added to check in a git hub");
+	}
 }
 
