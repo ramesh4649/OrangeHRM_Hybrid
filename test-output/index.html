@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Orangehrm_testsuite">
+              <span class="suite-name border-failed">Orangehrm testsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Orangehrm_testsuite">
+                    <span>C:\Users\batik\workspace\OrangeHRMREAL\Orangehrm.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Orangehrm_testsuite">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Orangehrm_testsuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Orangehrm_testsuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Orangehrm_testsuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Orangehrm_testsuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Orangehrm_testsuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Orangehrm_testsuite" class="hide-methods failed suite-Orangehrm_testsuite"> (hide)</a> <!-- hide-methods failed suite-Orangehrm_testsuite -->
+                      <a href="#" panel-name="suite-Orangehrm_testsuite" class="show-methods failed suite-Orangehrm_testsuite"> (show)</a> <!-- show-methods failed suite-Orangehrm_testsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-Orangehrm_testsuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Orangehrm_testsuite" title="OrangeHRM.TestCases.UserRegTest" hash-for-method="Userregistration(ESS, chiranjeevi, demoravi123, Ravi123!@#)">Userregistration(ESS, chiranjeevi, demoravi123, Ravi123!@#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Orangehrm_testsuite" title="OrangeHRM.TestCases.EmployeeloginTest" hash-for-method="checkemployeelogintest">checkemployeelogintest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Orangehrm_testsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Orangehrm_testsuite" class="hide-methods passed suite-Orangehrm_testsuite"> (hide)</a> <!-- hide-methods passed suite-Orangehrm_testsuite -->
+                      <a href="#" panel-name="suite-Orangehrm_testsuite" class="show-methods passed suite-Orangehrm_testsuite"> (show)</a> <!-- show-methods passed suite-Orangehrm_testsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-Orangehrm_testsuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Orangehrm_testsuite" title="OrangeHRM.TestCases.AdminLoginTestWithValidData" hash-for-method="CheckAdminLogin(Admin, Qedge123!@#)">CheckAdminLogin(Admin, Qedge123!@#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Orangehrm_testsuite" title="OrangeHRM.TestCases.AdminLoginTestwithInvalidData" hash-for-method="checkAdminLogin(adc, 123)">checkAdminLogin(adc, 123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Orangehrm_testsuite" title="OrangeHRM.TestCases.EmployeeRegTest" hash-for-method="checkempReg(seresha, Qedge)">checkempReg(seresha, Qedge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Orangehrm_testsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Orangehrm_testsuite" class="panel Orangehrm_testsuite">
+          <div class="suite-Orangehrm_testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OrangeHRM.TestCases.UserRegTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Userregistration(ESS, chiranjeevi, demoravi123, Ravi123!@#)">
+                  </a> <!-- Userregistration(ESS, chiranjeevi, demoravi123, Ravi123!@#) -->
+                  <span class="method-name">Userregistration</span>
+                  <span class="parameters">(ESS, chiranjeevi, demoravi123, Ravi123!@#)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=searchSystemUser_userName
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LAPTOP-CE5NOSOD&apos;, ip: &apos;192.168.0.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at OrangeHRM.Library.User.addUser(User.java:34)
+	at OrangeHRM.TestCases.UserRegTest.Userregistration(UserRegTest.java:17)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Orangehrm_testsuite-class-failed -->
+          <div class="suite-Orangehrm_testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">OrangeHRM.TestCases.EmployeeloginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkemployeelogintest">
+                  </a> <!-- checkemployeelogintest -->
+                  <span class="method-name">checkemployeelogintest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [checkemployeelogintest] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Orangehrm_testsuite-class-failed -->
+          <div class="suite-Orangehrm_testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">OrangeHRM.TestCases.EmployeeRegTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkempReg(seresha, Qedge)">
+                  </a> <!-- checkempReg(seresha, Qedge) -->
+                  <span class="method-name">checkempReg</span>
+                  <span class="parameters">(seresha, Qedge)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Orangehrm_testsuite-class-passed -->
+          <div class="suite-Orangehrm_testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">OrangeHRM.TestCases.AdminLoginTestWithValidData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckAdminLogin(Admin, Qedge123!@#)">
+                  </a> <!-- CheckAdminLogin(Admin, Qedge123!@#) -->
+                  <span class="method-name">CheckAdminLogin</span>
+                  <span class="parameters">(Admin, Qedge123!@#)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Orangehrm_testsuite-class-passed -->
+          <div class="suite-Orangehrm_testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">OrangeHRM.TestCases.AdminLoginTestwithInvalidData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkAdminLogin(adc, 123)">
+                  </a> <!-- checkAdminLogin(adc, 123) -->
+                  <span class="method-name">checkAdminLogin</span>
+                  <span class="parameters">(adc, 123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Orangehrm_testsuite-class-passed -->
+        </div> <!-- panel Orangehrm_testsuite -->
+        <div panel-name="test-xml-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\batik\workspace\OrangeHRMREAL\Orangehrm.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Orangehrm testsuite&quot;&gt;
+  &lt;test name=&quot;Checking Admin login testcase&quot;&gt;
+    &lt;parameter name=&quot;adminpwd&quot; value=&quot;Qedge123!@#&quot;/&gt;
+    &lt;parameter name=&quot;adminuid&quot; value=&quot;Admin&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OrangeHRM.TestCases.AdminLoginTestWithValidData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Checking Admin login testcase --&gt;
+  &lt;test name=&quot;Checking Adminlogin with ivaliddata testcase&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;adc&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;123&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OrangeHRM.TestCases.AdminLoginTestwithInvalidData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Checking Adminlogin with ivaliddata testcase --&gt;
+  &lt;test name=&quot;Employee Reg test&quot;&gt;
+    &lt;parameter name=&quot;fname&quot; value=&quot;seresha&quot;/&gt;
+    &lt;parameter name=&quot;lname&quot; value=&quot;Qedge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OrangeHRM.TestCases.EmployeeRegTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Employee Reg test --&gt;
+  &lt;test name=&quot;user Reg test&quot;&gt;
+    &lt;parameter name=&quot;empname&quot; value=&quot;chiranjeevi&quot;/&gt;
+    &lt;parameter name=&quot;role&quot; value=&quot;ESS&quot;/&gt;
+    &lt;parameter name=&quot;uname&quot; value=&quot;demoravi123&quot;/&gt;
+    &lt;parameter name=&quot;pword&quot; value=&quot;Ravi123!@#&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OrangeHRM.TestCases.UserRegTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- user Reg test --&gt;
+  &lt;test name=&quot;employee logintest&quot;&gt;
+    &lt;parameter name=&quot;uid&quot; value=&quot;demoravi123&quot;/&gt;
+    &lt;parameter name=&quot;pwd&quot; value=&quot;Ravi123!@#&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OrangeHRM.TestCases.EmployeeloginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- employee logintest --&gt;
+&lt;/suite&gt; &lt;!-- Orangehrm testsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Orangehrm testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Checking Admin login testcase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Checking Adminlogin with ivaliddata testcase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Employee Reg test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">user Reg test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">employee logintest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Orangehrm testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Orangehrm testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Orangehrm_testsuite');
+function tableData_Orangehrm_testsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Userregistration')
+data.setCell(0, 2, 'OrangeHRM.TestCases.UserRegTest')
+data.setCell(0, 3, 18844);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkempReg')
+data.setCell(1, 2, 'OrangeHRM.TestCases.EmployeeRegTest')
+data.setCell(1, 3, 4697);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CheckAdminLogin')
+data.setCell(2, 2, 'OrangeHRM.TestCases.AdminLoginTestWithValidData')
+data.setCell(2, 3, 3077);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkAdminLogin')
+data.setCell(3, 2, 'OrangeHRM.TestCases.AdminLoginTestwithInvalidData')
+data.setCell(3, 3, 632);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkemployeelogintest')
+data.setCell(4, 2, 'OrangeHRM.TestCases.EmployeeloginTest')
+data.setCell(4, 3, 0);
+window.suiteTableData['Orangehrm_testsuite']= { tableData: data, tableDiv: 'times-div-Orangehrm_testsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <div id="times-div-Orangehrm_testsuite">
+              </div> <!-- times-div-Orangehrm_testsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Orangehrm testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Orangehrm_testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.EmployeeloginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">Launchapp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.AdminLoginTestWithValidData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CheckAdminLogin(Admin, Qedge123!@#)</span>
+                <span class="method-start">5613 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.AdminLoginTestwithInvalidData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkAdminLogin(adc, 123)</span>
+                <span class="method-start">8760 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.EmployeeRegTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">adminlogin</span>
+                <span class="method-start">9415 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">checkempReg(seresha, Qedge)</span>
+                <span class="method-start">10762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">adminlogout</span>
+                <span class="method-start">15460 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.UserRegTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">adminlogin</span>
+                <span class="method-start">16210 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Userregistration(ESS, chiranjeevi, demoravi123, Ravi123!@#)</span>
+                <span class="method-start">17475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">adminlogout</span>
+                <span class="method-start">36328 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">OrangeHRM.TestCases.EmployeeloginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeapp</span>
+                <span class="method-start">36425 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

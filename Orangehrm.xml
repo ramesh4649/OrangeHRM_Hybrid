@@ -1,0 +1,48 @@
+<suite name= "Orangehrm testsuite">
+	<test name= "Checking Admin login testcase">
+	<parameter name="adminuid" value="Admin"></parameter>
+	<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name= "OrangeHRM.TestCases.AdminLoginTestWithValidData"></class>	
+		</classes>
+	</test>
+	 
+	 
+
+	<test name="Checking Adminlogin with ivaliddata testcase">
+	<parameter name= "uid" value= "adc"></parameter>
+	<parameter name= "pwd" value= "123"></parameter>
+		<classes>
+		<class name = "OrangeHRM.TestCases.AdminLoginTestwithInvalidData"></class>		
+		</classes>
+	</test>
+	
+	
+	<test name= "Employee Reg test">
+	<parameter name= "fname" value="seresha"></parameter>
+	<parameter name= "lname" value= "Qedge"></parameter>
+	<classes>
+		<class name = "OrangeHRM.TestCases.EmployeeRegTest"></class>
+	</classes>
+	</test>
+	
+	
+	<test name= "user Reg test">
+	<parameter name = "role" value ="ESS"></parameter>
+	<parameter name = "empname" value ="chiranjeevi"></parameter>
+	<parameter name = "uname" value ="demoravi123"></parameter>
+	<parameter name = "pword" value ="Ravi123!@#"></parameter>
+	<classes>
+	<class name= "OrangeHRM.TestCases.UserRegTest"></class>
+	</classes>
+	</test>
+	
+	<test name = "employee logintest">
+	<parameter name= "uid" value= "demoravi123"></parameter>
+	<parameter name= "pwd" value= "Ravi123!@#"></parameter>
+	<classes>
+	<class name="OrangeHRM.TestCases.EmployeeloginTest"></class>
+	</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orangehrm testsuite]">
+  <test name="user Reg test(failed)">
+    <parameter name="empname" value="chiranjeevi"/>
+    <parameter name="role" value="ESS"/>
+    <parameter name="uname" value="demoravi123"/>
+    <parameter name="pword" value="Ravi123!@#"/>
+    <classes>
+      <class name="OrangeHRM.TestCases.UserRegTest">
+        <methods>
+          <include name="Launchapp"/>
+          <include name="adminlogin"/>
+          <include name="adminlogout"/>
+          <include name="closeapp"/>
+          <include name="Userregistration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- OrangeHRM.TestCases.UserRegTest -->
+    </classes>
+  </test> <!-- user Reg test(failed) -->
+  <test name="employee logintest(failed)">
+    <parameter name="uid" value="demoravi123"/>
+    <parameter name="pwd" value="Ravi123!@#"/>
+    <classes>
+      <class name="OrangeHRM.TestCases.EmployeeloginTest">
+        <methods>
+          <include name="Launchapp"/>
+          <include name="closeapp"/>
+          <include name="checkemployeelogintest"/>
+        </methods>
+      </class> <!-- OrangeHRM.TestCases.EmployeeloginTest -->
+    </classes>
+  </test> <!-- employee logintest(failed) -->
+</suite> <!-- Failed suite [Orangehrm testsuite] -->
